@@ -4,9 +4,13 @@
   "description": "A lightweight rpc-style wrapper for the ipc module of electron",
   "main": "index.js",
   "scripts": {
-    "test": "standard ./*.js"
+    "test": "standard ./*.js",
+    "start": "node server.js"
   },
-  "author": "Marc Bachmann <marc.brookman@gmail.com>",
+  "author": {
+    "name": "Marc Bachmann",
+    "email": "marc.brookman@gmail.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "standard": "^4.5.4"
@@ -25,5 +29,27 @@
     "atom",
     "rpc",
     "ipc"
-  ]
+  ],
+  "gitHead": "ba5486f9886102b312bc38cbf13bb66366b9b287",
+  "_id": "electron-rpc@1.0.3",
+  "_shasum": "39ea39355bc7fe213bb6b7c9f70d04789c0648d2",
+  "_from": "electron-rpc@*",
+  "_npmVersion": "2.12.0",
+  "_nodeVersion": "0.10.38",
+  "_npmUser": {
+    "name": "marcbachmann",
+    "email": "marc.brookman@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "marcbachmann",
+      "email": "marc.brookman@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "39ea39355bc7fe213bb6b7c9f70d04789c0648d2",
+    "tarball": "http://registry.npmjs.org/electron-rpc/-/electron-rpc-1.0.3.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/electron-rpc/-/electron-rpc-1.0.3.tgz"
 }
