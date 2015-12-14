@@ -72,7 +72,6 @@ function convertErrorResponse (err) {
 }
 
 function convertErrorRequest (err) {
-  console.dir(err);
   err = JSON.parse(JSON.stringify(err,
     ['message', 'arguments', 'type', 'name', 'stack', 'code', 'column', 'line', 'file', 'formatted']
   ));
