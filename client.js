@@ -64,11 +64,18 @@ function convertErrorResponse (err) {
   error.name = err.name;
   error.arguments = err.arguments;
   error.stack = err.stack;
+  error.column = err.column;
+  error.line = err.line;
+  error.file = err.file;
+  error.formatted = err.formatted;
   return error;
 }
 
 function convertErrorRequest (err) {
-  err = JSON.parse(JSON.stringify(err, ["message", "arguments", "type", "name", "stack"]))
+  console.dir(err);
+  err = JSON.parse(JSON.stringify(err,
+    ['message', 'arguments', 'type', 'name', 'stack', 'code', 'column', 'line', 'file', 'formatted']
+  ));
   err.isError = true;
   return err
 }
